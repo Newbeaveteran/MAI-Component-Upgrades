@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+   <HediffDef Name="upgradedTier1Part" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+	  <isBad>false</isBad>
+      <defaultLabelColor>(244,107,66)</defaultLabelColor>
+      <addedPartProps>
+         <isBionic>true</isBionic>
+         <isSolid>true</isSolid>
+      </addedPartProps>
+   </HediffDef>
+   <HediffDef Name="upgradedTier2Part" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+	  <isBad>false</isBad>
+      <defaultLabelColor>(235,244,66)</defaultLabelColor>
+      <addedPartProps>
+         <isBionic>true</isBionic>
+         <isSolid>true</isSolid>
+      </addedPartProps>
+   </HediffDef>
+   <HediffDef Name="upgradedTier3Part" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+	  <isBad>false</isBad>
+      <defaultLabelColor>(101,244,66)</defaultLabelColor>
+      <addedPartProps>
+         <isBionic>true</isBionic>
+         <isSolid>true</isSolid>
+      </addedPartProps>
+   </HediffDef>
+   <HediffDef Name="upgradedSpecialParts" Abstract="True">
+      <hediffClass>Hediff_AddedPart</hediffClass>
+	  <isBad>false</isBad>
+      <defaultLabelColor>(66,244,232)</defaultLabelColor>
+      <addedPartProps>
+         <isBionic>true</isBionic>
+         <isSolid>true</isSolid>
+      </addedPartProps>
+   </HediffDef>
+   <!-- Tier 1 Upgrades -->
+   <!--New Parts-->
+   <HediffDef ParentName="upgradedTier1Part">
+      <defName>EnhancedLenseTA</defName>
+      <label>E-Lense (Tier 1)</label>
+      <spawnThingOnRemoved>EnhancedLenseTA</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Sight</capacity>
+               <offset>0.10</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier1Part">
+      <defName>EnhancedSpeakerTA</defName>
+      <label>E-Speaker (Tier 1)</label>
+      <spawnThingOnRemoved>EnhancedSpeakerTA</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Talking</capacity>
+               <offset>0.20</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+      
+   <HediffDef ParentName="upgradedTier1Part">
+      <defName>PrecisionMechanicalShoulderTA</defName>
+      <label>PM-Shoulder (Tier 1)</label>
+      <spawnThingOnRemoved>PrecisionMechanicalShoulderTA</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.10</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+    <HediffDef ParentName="upgradedTier1Part">
+      <defName>CombatMechanicalShoulderTA</defName>
+      <label>CM-Shoulder (Tier 1)</label>
+      <spawnThingOnRemoved>CombatMechanicalShoulderTA</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>-0.10</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+	  <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>bionic fist</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>5</power>
+                  <cooldownTime>0.65</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier1Part">
+      <defName>BalancedMechanicalLegTA</defName>
+      <label>BM-Leg (Tier 1)</label>
+      <spawnThingOnRemoved>BalancedMechanicalLegTA</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Moving</capacity>
+               <offset>0.10</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <!-- Tier 2 Upgrades -->
+   
+   <HediffDef ParentName="upgradedTier2Part">
+      <defName>MechanicalArmSpine</defName>
+      <label>Mechanical Arm (Spine)</label>
+      <spawnThingOnRemoved>MechanicalArmSpine</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.50</offset>
+            </li>
+            <li>
+               <capacity>Moving</capacity>
+               <offset>-0.20</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier2Part">
+      <defName>EnhancedSpeakerTB</defName>
+      <label>E-Speaker (Tier 2)</label>
+      <spawnThingOnRemoved>EnhancedSpeakerTB</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Talking</capacity>
+               <offset>0.40</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <!--New Parts-->
+   <HediffDef ParentName="upgradedTier2Part">
+      <defName>EnhancedLenseTB</defName>
+      <label>E-Lense (Tier 2)</label>
+      <spawnThingOnRemoved>EnhancedLenseTB</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Sight</capacity>
+               <offset>0.20</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier2Part">
+      <defName>PrecisionMechanicalShoulderTB</defName>
+      <label>PM-Shoulder (Tier 2)</label>
+      <spawnThingOnRemoved>PrecisionMechanicalShoulderTB</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.20</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier2Part">
+      <defName>CombatMechanicalShoulderTB</defName>
+      <label>CM-Shoulder (Tier 2)</label>
+      <spawnThingOnRemoved>CombatMechanicalShoulderTB</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>-0.20</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+	  <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>bionic fist</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>25</power>
+                  <cooldownTime>1.65</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier2Part">
+      <defName>BalancedMechanicalLegTB</defName>
+      <label>BM-Leg (Tier 2)</label>
+      <spawnThingOnRemoved>BalancedMechanicalLegTB</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Moving</capacity>
+               <offset>0.25</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <!--Tier 3 Upgrades -->
+   
+   <!--New Parts-->
+   <HediffDef ParentName="upgradedTier3Part">
+      <defName>EnhancedSpeakerTC</defName>
+      <label>E-Speaker (Tier 3)</label>
+      <spawnThingOnRemoved>EnhancedSpeakerTC</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Talking</capacity>
+               <offset>0.90</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <!--New Parts-->
+   <HediffDef ParentName="upgradedTier3Part">
+      <defName>EnhancedLenseTC</defName>
+      <label>E-Lense (Tier 3)</label>
+      <spawnThingOnRemoved>EnhancedLenseTC</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Sight</capacity>
+               <offset>0.35</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier3Part">
+      <defName>DualMechArm</defName>
+      <label>DM-Arm(Spine)</label>
+      <spawnThingOnRemoved>DualMechArm</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.80</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+      
+    <HediffDef ParentName="upgradedTier3Part">
+      <defName>PrecisionMechanicalShoulderTC</defName>
+      <label>PM-Shoulder (Tier 3)</label>
+      <spawnThingOnRemoved>PrecisionMechanicalShoulderTC</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>0.35</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier3Part">
+      <defName>CombatMechanicalShoulderTC</defName>
+      <label>CM-Shoulder (Tier 3)</label>
+      <spawnThingOnRemoved>CombatMechanicalShoulderTC</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Manipulation</capacity>
+               <offset>-0.30</offset>
+            </li>
+			<li>
+               <capacity>Moving</capacity>
+               <offset>-0.20</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+	  <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>bionic fist</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>25</power>
+                  <cooldownTime>1.65</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedTier3Part">
+      <defName>BalancedMechanicalLegTC</defName>
+      <label>BM-Leg (Tier 3)</label>
+      <spawnThingOnRemoved>BalancedMechanicalLegTC</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <capMods>
+            <li>
+               <capacity>Moving</capacity>
+               <offset>0.35</offset>
+            </li>
+         </capMods>
+		</li>	 
+      </stages>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedSpecialParts">
+      <defName>AMTypeShoulder</defName>
+      <label>AM-Type Shoulder</label>
+      <spawnThingOnRemoved>AMTypeShoulder</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+         <li>
+            <capMods>
+               <li>
+                  <capacity>Manipulation</capacity>
+                  <offset>0.05</offset>
+               </li>
+            </capMods>
+			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			</statOffsets>
+         </li>
+      </stages>
+	  <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>bionic fist</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>25</power>
+                  <cooldownTime>1.65</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedSpecialParts">
+      <defName>AMTypeLeg</defName>
+      <label>AM-Type Leg</label>
+      <spawnThingOnRemoved>AMTypeLeg</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+         <li>
+            <capMods>
+               <li>
+                  <capacity>Moving</capacity>
+                  <offset>-0.05</offset>
+               </li>
+            </capMods>
+			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			</statOffsets>
+         </li>
+      </stages>
+	  <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+               <li>
+                  <label>bionic fist</label>
+                  <capacities>
+                     <li>Blunt</li>
+                  </capacities>
+                  <power>5</power>
+                  <cooldownTime>1.65</cooldownTime>
+               </li>
+            </tools>
+         </li>
+      </comps>
+   </HediffDef>
+   
+   <HediffDef ParentName="upgradedSpecialParts">
+      <defName>NuclearBatteryCell</defName>
+      <label>NB Cell</label>
+      <spawnThingOnRemoved>NuclearBatteryCell</spawnThingOnRemoved>
+      <addedPartProps>
+         <partEfficiency>1.0</partEfficiency>
+      </addedPartProps>
+      <stages>
+		<li>
+         <restFallFactor>0.5</restFallFactor>
+		</li>	
+      </stages>
+   </HediffDef>
+
+</Defs>

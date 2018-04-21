@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <!--=============================== Tier 1 Tech ===================================-->
+   
+   <ResearchProjectDef>
+      <defName>MAIBodyUpgradesT1</defName>
+      <label>MAI Body Upgrades (Tier 1)</label>
+      <description>A step to thoroughly gaining knowledge and understanding of creating a better working MAI for your colony.</description>
+      <baseCost>1000</baseCost>
+      <techLevel>Industrial</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIBasicArmamentUpgrade</defName>
+      <label>Basic Armament Upgrade</label>
+      <description>Basics to MAI Component upgrading associating to the limbs. Allows basic upgrades for Shoulder and Leg.</description>
+      <baseCost>1000</baseCost>
+      <techLevel>Industrial</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT1</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIBasicSSpeechUpgrade</defName>
+      <label>Basic Sight and Speech Upgrade</label>
+      <description>Basics to MAI Component upgrading associating mostly around the facial parts of the MAI. Allows basic upgrades for Speaker and Lense</description>
+      <baseCost>1000</baseCost>
+      <techLevel>Industrial</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT1</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIBasicCombatUpgrade</defName>
+      <label>Basic Combat Upgrade</label>
+      <description>Basics to MAI Component upgrading associating mostly around Melee Combat. Allows basic upgrades to combat on shoulder parts.</description>
+      <baseCost>1000</baseCost>
+      <techLevel>Industrial</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT1</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+ <!--================== Tier 2 Tech ==================-->
+   
+   <ResearchProjectDef>
+      <defName>MAIBodyUpgradesT2</defName>
+      <label>MAI Body Upgrades (Tier 2)</label>
+      <description>With further research and experiments with other robots. You have acquired further knowledge to enhance the MAIs further.</description>
+      <baseCost>2000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT1</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIInterArmamentUpgrade</defName>
+      <label>Intermediate Armament Upgrade</label>
+      <description>Intermediate knowledge to MAI Component upgrading associating to the limbs. Allows basic upgrades for Shoulder and Leg.</description>
+      <baseCost>2000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT2</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIInterSSpeechUpgrade</defName>
+      <label>Intermediate knowledge sight and Speech Upgrade</label>
+      <description>Intermediate to MAI Component upgrading associating mostly around the facial parts of the MAI. Allows basic upgrades for Speaker and Lense</description>
+      <baseCost>2000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT2</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIInterCombatUpgrade</defName>
+      <label>Intermediate Combat Upgrade</label>
+      <description>Intermediate knowledge to MAI Component upgrading associating mostly around Melee Combat. Allows basic upgrades to combat on shoulder parts.</description>
+      <baseCost>2000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT2</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <!--================ Tier 3 ================-->
+   
+	<ResearchProjectDef>
+      <defName>MAIBodyUpgradesT3</defName>
+      <label>MAI Body Upgrades (Tier 3)</label>
+      <description>With further research and experiments with other robots. You have acquired further knowledge to enhance the MAIs further.</description>
+      <baseCost>4000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT2</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIAdvArmamentUpgrade</defName>
+      <label>Advance Armament Upgrade</label>
+      <description>Advanced knowledge to MAI Component upgrading associating to the limbs. Allows basic upgrades for Shoulder and Leg.</description>
+      <baseCost>4000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT3</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIAdvSSpeechUpgrade</defName>
+      <label>Advance Sight and Speech Upgrade</label>
+      <description>Advanced knowledge to MAI Component upgrading associating mostly around the facial parts of the MAI. Allows basic upgrades for Speaker and Lense</description>
+      <baseCost>2000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT3</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIAdvCombatUpgrade</defName>
+      <label>Advance Combat Upgrade</label>
+      <description>Advanced knowledge to MAI Component upgrading associating mostly around Melee Combat. Allows basic upgrades to combat on shoulder parts.</description>
+      <baseCost>2000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIBodyUpgradesT3</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAIArmourUpgrade</defName>
+      <label>Armour Upgrade</label>
+      <description>Advanced knowledge. After acquiring the correct flexibilty and density for protection and durability of your MAI. Allows production of armoured Limbs and others</description>
+      <baseCost>2000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+         <li>MAIAdvCombatUpgrade</li>
+		 <li>MAIBodyUpgradesT3</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   <ResearchProjectDef>
+      <defName>MAISpecialComponents</defName>
+      <label>Special Component Upgrades</label>
+      <description>Highly Advanced knowledge. After painstaking research, your colony has finally made special components. This components can specialize your MAIs to specific job tasks and(From Combat to Production)to increasing duration of battery. </description>
+      <baseCost>6000</baseCost>
+      <techLevel>Spacer</techLevel>
+	  <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	  <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+	  <prerequisites>
+		 <li>MAIBodyUpgradesT3</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+   
+   
+</Defs>

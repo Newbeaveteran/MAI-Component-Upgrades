@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+    <defName>PlasoldAlloy</defName>
+    <label>Plasold Memory Alloy</label>
+    <description>Advanced Memory Alloy, capable of being highly durable and flexible moving parts and such.
+
+This alloy is capable of removing most of the kinetic energy passing through it, as well as tough enough to make any sharp objects become dull.</description>
+    <graphicData>
+      <texPath>Things/Items/PlasoldAlloy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <Mass>0.9</Mass>
+      <SharpDamageMultiplier>2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>2.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(146,164,105)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>5.8</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>4.5</WorkToMake>
+				<WorkToBuild>3.2</WorkToBuild>
+        <MeleeWeapon_Cooldown>0.7</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+
+</Defs>

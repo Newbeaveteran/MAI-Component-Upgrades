@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+   <RecipeDef Abstract="True" Name="Tier1MAIParts">
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+	  <unfinishedThingDef>UnfinishedParts</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <workAmount>5000</workAmount>
+	  <recipeUsers>
+		<li>TableAIPart</li>
+	  </recipeUsers>
+      <skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+   </RecipeDef>
+   
+   <RecipeDef Abstract="True" Name="Tier2MAIParts">
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+	  <unfinishedThingDef>UnfinishedParts</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <workAmount>10000</workAmount>
+	  <recipeUsers>
+		<li>TableAIPart</li>
+	  </recipeUsers>
+      <skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+   </RecipeDef>
+   
+   <RecipeDef Abstract="True" Name="Tier3MAIParts">
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+	  <unfinishedThingDef>UnfinishedParts</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <workAmount>20000</workAmount>
+	  <recipeUsers>
+		<li>TableAIPart</li>
+	  </recipeUsers>
+      <skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+   </RecipeDef>
+   
+   <!--Software Installation USB Sticks-->
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateEmptyUSB</defName>
+      <label>Create an Empty USB Stick</label>
+      <description>A Universal Serial Bus Memory Stick to store software and data.</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Crafting an Empty USB</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Steel</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Component</li>
+			<li>Steel</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <EmptyUSB>1</EmptyUSB>
+      </products>
+	  <skillRequirements>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateSIAUSB</defName>
+      <label>Upload Type-A Software(SI-A100)</label>
+      <description>Uploads necessary software for Basic Component parts.</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Uploading Type-A Software</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>EmptyUSB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>EmptyUSB</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SIAUSB>1</SIAUSB>
+      </products>
+	  <skillRequirements>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateSIBUSB</defName>
+      <label>Upload Type-B Software(SI-B200)</label>
+      <description>Uploads necessary software for Intermediate Component parts.</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Uploading Type-B Software</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>EmptyUSB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>EmptyUSB</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SIBUSB>1</SIBUSB>
+      </products>
+	  <skillRequirements>
+			<Intellectual>10</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateSICUSB</defName>
+      <label>Upload Type-C Software(SI-C300)</label>
+      <description>Uploads necessary software for Intermediate Component parts.</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Uploading Type-C Software</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>EmptyUSB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>EmptyUSB</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <SICUSB>1</SICUSB>
+      </products>
+	  <skillRequirements>
+			<Intellectual>15</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+   </RecipeDef>
+   
+   <!-- Tier 1 -->
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateEnhancedLenseTA</defName>
+      <label>Create E-Lense (Tier 1)</label>
+      <description>Crafts a lense for your MAIs (+10% Sight)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Crafting Enhanced Lense (Tier 1)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <EnhancedLenseTA>1</EnhancedLenseTA>
+      </products>
+   </RecipeDef>
+   
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateEnhancedSpeakerTA</defName>
+      <label>Create E-Speaker (Tier 1)</label>
+      <description>Crafts a lense for your MAIs (+20% Talking)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Crafting Enhanced Lense (Tier 1)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <EnhancedSpeakerTA>1</EnhancedSpeakerTA>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreatePMShoulderTA</defName>
+      <label>Create PM-Shoulder (Tier 1)</label>
+      <description>Crafts a Mechanical Shoulder for your MAIs (+10% Manipulation)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Crafting Precision Mechanical Shoulder (Tier 1)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <PrecisionMechanicalShoulderTA>1</PrecisionMechanicalShoulderTA>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateCMShoulderTA</defName>
+      <label>Create CM-Shoulder (Tier 1)</label>
+      <description>Crafts a Mechanical Shoulder for your MAIs (Melee(Punch): 15 Damage;0.5 Cooldown -10% Manipulation)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Crafting Combat Mechanical Shoulder (Tier 1)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <CombatMechanicalShoulderTA>1</CombatMechanicalShoulderTA>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier1MAIParts">
+      <defName>CreateBMLegTA</defName>
+      <label>Create BM-Leg (Tier 1)</label>
+      <description>Crafts a Mechanical Leg for your MAIs (+10% Moving)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT1</researchPrerequisite>
+      <jobString>Crafting Balanced Mechanical Leg (Tier 1)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <BalancedMechanicalLegTA>1</BalancedMechanicalLegTA>
+      </products>
+   </RecipeDef>
+   
+   <!-- Tier 2 -->
+   
+   <RecipeDef ParentName="Tier2MAIParts">
+      <defName>CreateMASpine</defName>
+      <label>Create Mechanical Arm(Spine)</label>
+      <description>Crafts an extra Mechanical Arm for your MAIs located at their spines.(+50% Manipulation -20% Moving)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT2</researchPrerequisite>
+      <jobString>Crafting Mechanical Arm(Spine)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>PrecisionMechanicalShoulderTA</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+			<li>PrecisionMechanicalShoulderTA</li>
+            <li>Plasteel</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <MechanicalArmSpine>1</MechanicalArmSpine>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier2MAIParts">
+      <defName>CreateEnhancedSpeakerTB</defName>
+      <label>Create E-Speaker (Tier 2)</label>
+      <description>Crafts a lense for your MAIs (+40% Talking)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT2</researchPrerequisite>
+      <jobString>Crafting Enhanced Lense (Tier 2)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>EnhancedSpeakerTA</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+			<li>EnhancedSpeakerTA</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <EnhancedSpeakerTB>1</EnhancedSpeakerTB>
+      </products>
+   </RecipeDef>
+   
+   
+   <RecipeDef ParentName="Tier2MAIParts">
+      <defName>CreateEnhancedLenseTB</defName>
+      <label>Create E-Lense (Tier 2)</label>
+      <description>Crafts a lense for your MAIs (+20% Sight)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT2</researchPrerequisite>
+      <jobString>Crafting Enhanced Lense (Tier 2)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>EnhancedLenseTA</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+			<li>EnhancedLenseTA</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <EnhancedLenseTB>1</EnhancedLenseTB>
+      </products>
+   </RecipeDef>
+   
+    <RecipeDef ParentName="Tier2MAIParts">
+      <defName>CreateCMShoulderTB</defName>
+      <label>Create CM-Shoulder (Tier 2)</label>
+      <description>Crafts a Mechanical Shoulder for your MAIs (Melee(Punch): 35 Damage;0.4 Cooldown -20% Manipulation)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT2</researchPrerequisite>
+      <jobString>Crafting Combat Mechanical Shoulder (Tier 2)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>CombatMechanicalShoulderTA</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+			<li>CombatMechanicalShoulderTA</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <CombatMechanicalShoulderTB>1</CombatMechanicalShoulderTB>
+      </products>
+   </RecipeDef>
+   
+    <RecipeDef ParentName="Tier2MAIParts">
+      <defName>CreatePMShoulderTB</defName>
+      <label>Create PM-Shoulder (Tier 2)</label>
+      <description>Crafts a Mechanical Shoulder for your MAIs (+20% Manipulation)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT2</researchPrerequisite>
+      <jobString>Crafting Precision Mechanical Shoulder (Tier 2)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>PrecisionMechanicalShoulderTA</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>Component</li>
+			<li>PrecisionMechanicalShoulderTA</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <PrecisionMechanicalShoulderTB>1</PrecisionMechanicalShoulderTB>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier2MAIParts">
+      <defName>CreateBMLegTB</defName>
+      <label>Create BM-Leg (Tier 2)</label>
+      <description>Crafts a Mechanical Leg for your MAIs (+20% Moving)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT2</researchPrerequisite>
+      <jobString>Crafting Balanced Mechanical Leg (Tier 2)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>BalancedMechanicalLegTA</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Component</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>Component</li>
+			<li>BalancedMechanicalLegTA</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <BalancedMechanicalLegTB>1</BalancedMechanicalLegTB>
+      </products>
+   </RecipeDef>
+   
+   <!-- Tier 3 -->
+   
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateEnhancedSpeakerTC</defName>
+      <label>Create E-Speaker (Tier 3)</label>
+      <description>Crafts a lense for your MAIs (+90% Talking)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Enhanced Lense (Tier 3)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>EnhancedSpeakerTB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>35</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+			<li>EnhancedSpeakerTB</li>
+            <li>Component</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <EnhancedSpeakerTC>1</EnhancedSpeakerTC>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateNuclearBatteryCell</defName>
+      <label>Create NB-Cell</label>
+      <description>Crafts a more improved version of your MAIs Battery allowing them to exert power usage.(+20% Moving and Manipulation) </description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting NB-Cell</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Uranium</li>
+               </thingDefs>
+            </filter>
+            <count>15</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>35</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+			<li>Uranium</li>
+            <li>AdvancedComponent</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <NuclearBatteryCell>1</NuclearBatteryCell>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateDMASpine</defName>
+      <label>Create Dual M-Arm(Spine)</label>
+      <description>Crafts a few extra Mechanical Arms for your MAIs located at their spines.(+80% Manipulation)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Mechanical Arm(Spine)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>30</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>MechanicalArmSpine</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>40</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+			<li>MechanicalArmSpine</li>
+            <li>Plasteel</li>
+            <li>AdvancedComponent</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <DualMechArm>1</DualMechArm>
+      </products>
+   </RecipeDef>
+   
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateEnhancedLenseTC</defName>
+      <label>Create E-Lense (Tier 3)</label>
+      <description>Crafts a lense for your MAIs (+35% Sight)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Enhanced Lense (Tier 3)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>EnhancedLenseTB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>30</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+			<li>EnhancedLenseTB</li>
+            <li>AdvancedComponent</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <EnhancedLenseTC>1</EnhancedLenseTC>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreatePMShoulderTC</defName>
+      <label>Create PM-Shoulder (Tier 3)</label>
+      <description>Crafts a Mechanical Shoulder for your MAIs (+35% Manipulation)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Precision Mechanical Shoulder (Tier 3)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>PrecisionMechanicalShoulderTB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>30</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>AdvancedComponent</li>
+			<li>PrecisionMechanicalShoulderTB</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <PrecisionMechanicalShoulderTC>1</PrecisionMechanicalShoulderTC>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateCMShoulderTC</defName>
+      <label>Create CM-Shoulder (Tier 3)</label>
+      <description>Crafts a Mechanical Shoulder for your MAIs (Melee(Punch): 60 Damage;0.2 Cooldown -30% Manipulation -20% Moving)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Combat Mechanical Shoulder (Tier 3)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>30</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>CombatMechanicalShoulderTB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+			<li>CombatMechanicalShoulderTB</li>
+            <li>AdvancedComponent</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <CombatMechanicalShoulderTC>1</CombatMechanicalShoulderTC>
+      </products>
+   </RecipeDef>
+   
+    <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateBMLegTC</defName>
+      <label>Create BM-Leg (Tier 3)</label>
+      <description>Crafts a Mechanical Leg for your MAIs (+35% Moving)</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Balanced Mechanical Leg (Tier 3)</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>BalancedMechanicalLegTB</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>30</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>AdvancedComponent</li>
+			<li>BalancedMechanicalLegTB</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <BalancedMechanicalLegTC>1</BalancedMechanicalLegTC>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateAMShoulder</defName>
+      <label>Create AM-Type Shoulder</label>
+      <description>Crafts an Armoured Mechanical Shoulder.</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Armoured Shoulder</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>75</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>PrecisionMechanicalShoulderTC</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>AdvancedComponent</li>
+			<li>PrecisionMechanicalShoulderTC</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <AMTypeShoulder>1</AMTypeShoulder>
+      </products>
+   </RecipeDef>
+   
+   <RecipeDef ParentName="Tier3MAIParts">
+      <defName>CreateAMLeg</defName>
+      <label>Create AM-Type Leg</label>
+      <description>Crafts an Armoured Mechanical Leg. Decreases movement by -5%</description>
+	  <researchPrerequisite>MAIBodyUpgradesT3</researchPrerequisite>
+      <jobString>Crafting Armoured Leg</jobString>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>75</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>BalancedMechanicalLegTC</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>AdvancedComponent</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>Plasteel</li>
+            <li>AdvancedComponent</li>
+			<li>BalancedMechanicalLegTC</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+         <AMTypeLeg>1</AMTypeLeg>
+      </products>
+   </RecipeDef>
+      
+</Defs>

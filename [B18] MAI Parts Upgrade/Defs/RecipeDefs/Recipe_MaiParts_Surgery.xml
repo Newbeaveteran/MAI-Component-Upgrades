@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+   <RecipeDef Name="SurgeryMechanical" ParentName="SurgeryFlesh" Abstract="True">
+     <surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
+	 <deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+      <recipeUsers>
+         <li>AIPawnE</li>
+		 <li>AIPawn</li>
+      </recipeUsers>
+   </RecipeDef>
+
+   <!-- Tier 1 -->
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallEnhancedSpeakerTA</defName>
+		<label>Install E-Speaker (Tier 1)</label>
+		<description>Installs an audio for communication with higher quality(+20% Talking)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to E-Speaker (Tier 1)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIAUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnhancedSpeakerTA</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EnhancedSpeakerTA</li>
+				<li>SIAUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>AIPawn_SpeakerDevice</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EnhancedSpeakerTA</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>Install</defName>
+		<label>Install E-Lense (Tier 1)</label>
+		<description>Installs a Lense that improves photo-quality(+10% Sight)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to E-Lense (Tier 1)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIAUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnhancedLenseTA</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EnhancedLenseTA</li>
+				<li>SIAUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftSightSensor</li>
+						<li>RightSightSensor</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>EnhancedLenseTA</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallPrecisionMechanicalShoulderTA</defName>
+		<label>Install PM-Shoulder (Tier 1)</label>
+		<description>Installs a Precision Mechanical Shoulder to increase precision and flexibility(+10% Manipulation)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Precision Mechanical Shoulder (Tier 1)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIAUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PrecisionMechanicalShoulderTA</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PrecisionMechanicalShoulderTA</li>
+				<li>SIAUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalShoulder</li>
+						<li>RightMechanicalShoulder</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>PrecisionMechanicalShoulderTA</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallCombatMechanicalShoulderTA</defName>
+		<label>Install CM-Shoulder (Tier 1)</label>
+		<description>Installs a Combat Mechanical Shoulder to increase combat capabilities in exchange of precision(Melee(Punch): 15 Damage;0.5 Cooldown -10% Manipulation)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Combat Mechanical Shoulder (Tier 1)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIAUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CombatMechanicalShoulderTA</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CombatMechanicalShoulderTA</li>
+				<li>SIAUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalShoulder</li>
+						<li>RightMechanicalShoulder</li> 
+		</appliedOnFixedBodyParts>
+		<addsHediff>CombatMechanicalShoulderTA</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallBalancedMechanicalLegTA</defName>
+		<label>Install BM-Leg (Tier 1)</label>
+		<description>Installs a Balanced Mechanical Leg to increase mobility(+10% Moving)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Balanced Mechanical Leg (Tier 1)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIAUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BalancedMechanicalLegTA</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BalancedMechanicalLegTA</li>
+				<li>SIAUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalLeg</li>
+						<li>RightMechanicalLeg</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>BalancedMechanicalLegTA</addsHediff>
+	</RecipeDef>
+	
+   <!-- Tier 2 -->
+   
+   <RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallMechanicalArmSpine</defName>
+		<label>Install M-Arm</label>
+		<description>Installs an additional mechanical arm at your MAIs Spine allowing an additional manipulation capabilities(+50% Manipulation -20% Moving)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing additional mechanical arm (spine)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIBUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechanicalArmSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MechanicalArmSpine</li>
+				<li>SIBUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>AIPawn_Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MechanicalArmSpine</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallEnhancedSpeakerTB</defName>
+		<label>Install E-Speaker (Tier 2)</label>
+		<description>Installs an audio for communication with higher quality(+40% Talking)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to E-Speaker (Tier 2)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIBUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnhancedSpeakerTB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EnhancedSpeakerTB</li>
+				<li>SIBUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>AIPawn_SpeakerDevice</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EnhancedSpeakerTB</addsHediff>
+	</RecipeDef>
+   
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallEnhancedLenseTB</defName>
+		<label>Install E-Lense (Tier 2)</label>
+		<description>Installs a Lense that improves photo-quality(+20% Sight)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to E-Lense (Tier 2)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIBUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnhancedLenseTB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EnhancedLenseTB</li>
+				<li>SIBUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftSightSensor</li>
+						<li>RightSightSensor</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>EnhancedLenseTB</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallPrecisionMechanicalShoulderTB</defName>
+		<label>Install PM-Shoulder (Tier 2)</label>
+		<description>Installs a Precision Mechanical Shoulder to increase precision and flexibility(+20% Manipulation)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Precision Mechanical Shoulder (Tier 2)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIBUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PrecisionMechanicalShoulderTB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PrecisionMechanicalShoulderTB</li>
+				<li>SIBUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalShoulder</li>
+						<li>RightMechanicalShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PrecisionMechanicalShoulderTB</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallCombatMechanicalShoulderTB</defName>
+		<label>Install CM-Shoulder (Tier 2)</label>
+		<description>Installs a Combat Mechanical Shoulder to increase combat capabilities(Melee(Punch): 35 Damage;0.4 Cooldown -20% Manipulation)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Combat Mechanical Shoulder (Tier 2)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIBUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CombatMechanicalShoulderTB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CombatMechanicalShoulderTB</li>
+				<li>SIBUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalShoulder</li>
+						<li>RightMechanicalShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CombatMechanicalShoulderTB</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallBalancedMechanicalLegTB</defName>
+		<label>Install BM-Leg (Tier 2)</label>
+		<description>Installs a Balanced Mechanical Leg to increase mobility(+25% Moving)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Balanced Mechanical Leg (Tier 2)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SIBUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BalancedMechanicalLegTB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SIBUSB</li>
+				<li>BalancedMechanicalLegTB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalLeg</li>
+						<li>RightMechanicalLeg</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>BalancedMechanicalLegTB</addsHediff>
+	</RecipeDef>
+	
+	<!--Tier 3-->
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallEnhancedSpeakerTC</defName>
+		<label>Install E-Speaker (Tier 3)</label>
+		<description>Installs an audio for communication with higher quality(+90% Talking)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to E-Speaker (Tier 3)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnhancedSpeakerTC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EnhancedSpeakerTC</li>
+				<li>SICUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>AIPawn_SpeakerDevice</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EnhancedSpeakerTC</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallDualMechArm</defName>
+		<label>Install Dual M-Arm</label>
+		<description>Installs an additional mechanical arm at your MAIs Spine allowing an additional manipulation capabilities(+80% Manipulation)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing additional mechanical arm (spine)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DualMechArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DualMechArm</li>
+				<li>SICUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>AIPawn_Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DualMechArm</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallEnhancedLenseTC</defName>
+		<label>Install E-Lense (Tier 3)</label>
+		<description>Installs a Lense that improves photo-quality(+35% Sight)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to E-Lense (Tier 3)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnhancedLenseTC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EnhancedLenseTC</li>
+				<li>SICUSB</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftSightSensor</li>
+						<li>RightSightSensor</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>EnhancedLenseTC</addsHediff>
+	</RecipeDef>
+		
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallPrecisionMechanicalShoulderTC</defName>
+		<label>Install PM-Shoulder (Tier 3)</label>
+		<description>Installs a Precision Mechanical Shoulder to increase precision and flexibility(+35% Manipulation)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Precision Mechanical Shoulder (Tier 3)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PrecisionMechanicalShoulderTC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SICUSB</li>
+				<li>PrecisionMechanicalShoulderTC</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalShoulder</li>
+						<li>RightMechanicalShoulder</li> 
+		</appliedOnFixedBodyParts>
+		<addsHediff>PrecisionMechanicalShoulderTC</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallCombatMechanicalShoulderTC</defName>
+		<label>Install CM-Shoulder (Tier 3)</label>
+		<description>Installs a Combat Mechanical Shoulder to increase combat capabilities(Melee(Punch): 60 Damage;0.2 Cooldown -30% Manipulation -20% Moving)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Combat Mechanical Shoulder (Tier 3)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CombatMechanicalShoulderTC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SICUSB</li>
+				<li>CombatMechanicalShoulderTC</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalShoulder</li>
+						<li>RightMechanicalShoulder</li> 
+		</appliedOnFixedBodyParts>
+		<addsHediff>CombatMechanicalShoulderTC</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallBalancedMechanicalLegTC</defName>
+		<label>Install BM-Leg (Tier 3)</label>
+		<description>Installs a Balanced Mechanical Leg to increase mobility(+35% Moving)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Balanced Mechanical Leg (Tier 3)</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BalancedMechanicalLegTC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SICUSB</li>
+				<li>BalancedMechanicalLegTC</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalLeg</li>
+						<li>RightMechanicalLeg</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>BalancedMechanicalLegTC</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallNuclearBatteryCell</defName>
+		<label>Install NB-Cell</label>
+		<description>Installs a more improved version of your MAIs Battery</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading Battery</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NuclearBatteryCell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SICUSB</li>
+				<li>NuclearBatteryCell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>AIPawn_BatteryLeft</li>
+						<li>AIPawn_BatteryRight</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>NuclearBatteryCell</addsHediff>
+	</RecipeDef>
+	
+	<!-- Armoured Parts -->
+  
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallAMLeg</defName>
+		<label>Install AM-Leg (Tier 3)</label>
+		<description>Armoured Mechanical Leg Installation</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Armoured Leg</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AMTypeLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SICUSB</li>
+				<li>AMTypeLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalLeg</li>
+						<li>RightMechanicalLeg</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>AMTypeLeg</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryMechanical">
+		<defName>InstallAMShoulder</defName>
+		<label>Install AM-Shoulder (Tier 3)</label>
+		<description>Armoured Mechanical Leg Installation</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Upgrading to Armoured Shoulder</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SICUSB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AMTypeShoulder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SICUSB</li>
+				<li>AMTypeShoulder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+                        <li>LeftMechanicalShoulder</li>
+						<li>RightMechanicalShoulder</li> 						
+		</appliedOnFixedBodyParts>
+		<addsHediff>AMTypeShoulder</addsHediff>
+	</RecipeDef>
+</Defs>

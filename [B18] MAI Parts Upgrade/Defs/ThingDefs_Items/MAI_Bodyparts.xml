@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingDef Name="MechanicalBodyPartBase" ParentName = "BodyPartBase" Abstract="True">
+		<thingCategories>
+			<li>BodyPartsMechanical</li>
+		</thingCategories>
+		<tradeTags>
+			<li>BodyPartsMechanical</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--Tier 1-->	
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>EnhancedLenseTA</defName>
+      <label>enhanced lense (Tier 1)</label>
+      <description>A Lense that improves photo-quality(+10% Sight) 
+
+Tier 1 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier1Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>1500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>EnhancedSpeakerTA</defName>
+      <label>enhanced speaker (Tier 1)</label>
+      <description>An audio for communication with higher quality(+20% Talking)
+	  
+Tier 1 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier1Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>1500</MarketValue>
+      </statBases>
+   </ThingDef>
+	
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>PrecisionMechanicalShoulderTA</defName>
+      <label>precision mechanical shoulder (Tier 1)</label>
+      <description>A precision mechanical shoulder to increase precision and flexibility(+10% Manipulation)
+	  
+Tier 1 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier1Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>1500</MarketValue>
+      </statBases>
+   </ThingDef>
+	
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>CombatMechanicalShoulderTA</defName>
+      <label>combat mechanical shoulder (Tier 1)</label>
+      <description>A combat mechanical shoulder to increase combat capabilities in exchange of precision(Melee(Punch): 15 Damage;0.5 Cooldown -10% Manipulation)
+
+Tier 1 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier1Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>1500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>BalancedMechanicalLegTA</defName>
+      <label>balanced mechanical leg (Tier 1)</label>
+      <description>a Balanced Mechanical Leg to increase mobility(+10% Moving)
+	  
+Tier 1 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier1Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>1500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <!--Tier 2-->
+   
+   
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>MechanicalArmSpine</defName>
+      <label>mechanical arm (spine)</label>
+      <description>An additional mechanical arm attachable at the spine of your MAIs(+50% Manipulation -20% Moving)
+
+Tier 2 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier2Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>3250</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>EnhancedSpeakerTB</defName>
+      <label>enhanced speaker (Tier 2)</label>
+      <description>An audio for communication with higher quality(+20% Talking)
+	  
+Tier 2 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier2Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>3250</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+  
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>EnhancedLenseTB</defName>
+      <label>enhanced lense (Tier 2)</label>
+      <description>A Lense that improves photo-quality(+40% Sight)
+	  
+Tier 2 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier2Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>3250</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>PrecisionMechanicalShoulderTB</defName>
+      <label>precision mechanical shoulder (Tier 2)</label>
+      <description>A precision mechanical shoulder to increase precision and flexibility(+20% Manipulation)
+	  
+Tier 2 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier2Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>3250</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>CombatMechanicalShoulderTB</defName>
+      <label>combat mechanical shoulder (Tier 2)</label>
+      <description>A combat mechanical shoulder to increase combat capabilities(Melee(Punch): 35 Damage;0.4 Cooldown -20% Manipulation)
+	  
+Tier 2 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier2Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>3250</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>BalancedMechanicalLegTB</defName>
+      <label>balanced mechanical leg (Tier 2)</label>
+      <description>a Balanced Mechanical Leg to increase mobility(+25% Moving)
+	  
+Tier 2 Installations Requires: 20 Plasteel</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier2Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>3250</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <!-- Tier 3 -->
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>DualMechArm</defName>
+      <label>Dual Mechanical Arm(spine)</label>
+      <description>An two additional mechanical arm attachable at the spine of your MAIs(+80% Manipulation)
+	  
+Tier 3 Installations Requires: 10 Vancidium</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>15500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>NuclearBatteryCell</defName>
+      <label>Nuclear Battery Cell</label>
+      <description>A more improved version of your MAIs Battery allowing them to exert more battery usage.(+20% Moving and Manipulation)
+	  
+Tier 3 Installations Requires: 10 Vancidium</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>20500</MarketValue>
+      </statBases>
+   </ThingDef>
+    
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>EnhancedSpeakerTC</defName>
+      <label>enhanced speaker (Tier 3)</label>
+      <description>An audio for communication with higher quality(+90% Talking)
+	  
+Tier 3 Installations Requires: 10 Vancidium</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   
+	<ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>EnhancedLenseTC</defName>
+      <label>enhanced lense (Tier 3)</label>
+      <description>A Lense that improves photo-quality(+35% Sight)
+	  
+Tier 3 Installations Requires: 10 Vancidium</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>8000</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>PrecisionMechanicalShoulderTC</defName>
+      <label>precision mechanical shoulder (Tier 3)</label>
+      <description>A precision mechanical shoulder to increase precision and flexibility(+35% Manipulation)
+	  
+Tier 3 Installations Requires: 10 Vancidium</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>CombatMechanicalShoulderTC</defName>
+      <label>combat mechanical shoulder (Tier 3)</label>
+      <description>A combat mechanical shoulder to increase combat capabilities(Melee(Punch): 60 Damage;0.2 Cooldown -30% Manipulation -20% Moving)
+	  
+Tier 3 Installations Requires: 10 Vancidium</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>BalancedMechanicalLegTC</defName>
+      <label>balanced mechanical leg (Tier 3)</label>
+      <description>a Balanced Mechanical Leg to increase mobility(+35% Moving)
+	  
+Tier 3 Installations Requires: 10 Vancidium</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>AMTypeLeg</defName>
+      <label>Armoured Mechanical AM-Type Leg</label>
+      <description>Armoured Mechanical Leg for more protection</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>AMTypeShoulder</defName>
+      <label>Armoured Mechanical AM-Type Shoulder</label>
+      <description>Armoured Mechanical Shoulder for more protection</description>
+      <graphicData>
+         <texPath>Things/Items/BodyParts/Tier3Parts</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>EmptyUSB</defName>
+      <label>Empty USB Memory Stick</label>
+      <description>An empty Universal Serial Bus Memory Stick. Good for storing software and data.</description>
+      <graphicData>
+         <texPath>Things/Items/USB/EmptyUSB</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>SIAUSB</defName>
+      <label>SI-A100(USB)</label>
+      <description>A software installation Type A Version 100. Used for giving proper functions to Type-A Components.</description>
+      <graphicData>
+         <texPath>Things/Items/USB/SI-A100</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+  
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>SIBUSB</defName>
+      <label>SI-B200(USB)</label>
+      <description>A software installation Type B Version 200. Used for giving proper functions to Type-B Components.</description>
+      <graphicData>
+         <texPath>Things/Items/USB/SI-B200</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="MechanicalBodyPartBase">
+      <defName>SICUSB</defName>
+      <label>SI-C300(USB)</label>
+      <description>A software installation Type C Version 300. Used for giving proper functions to Type-C Components.</description>
+      <graphicData>
+         <texPath>Things/Items/USB/SI-C300</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>11500</MarketValue>
+      </statBases>
+   </ThingDef>
+
+</Defs>

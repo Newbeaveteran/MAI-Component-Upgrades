@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[B18] MAI Component Upgrades</name>
+  <author>Newbeaveteran</author>
+  <targetVersion>0.18.0</targetVersion>
+  <description>
+This mod adds in a few body parts for your
+MAIs. 
+
+Installing Parts Material Requirements(Instead of using medicines it will use this):
+SI-A100 USB (Tier 1)
+SI-B200 USB (Tier 2)
+SI-C300 USB (Tier 3)
+
+Required Mods to work properly:
+ 
+Misc. Core
+Misc. MAI
+
+Current Parts:
+Battery Cell - Slows down Tiredness
+Enhanced Lenses - Increases Sight
+Enhanced Speaker - Increases Speech
+Precision Mechanical Shoulder - Increases Manipulation
+Combat Mechanical Shoulder - Combat Oriented Part
+Mechanical Arm(Spine) - Increases Manipulation
+Balanced Mechanical Leg - Increases Movement
+Armoured Limbs - Armoured Part
+
+In-Progress(Because lazy):
+Specialized Chipset - Specializes yield on specific jobs and such.
+  </description>
+</ModMetaData>
